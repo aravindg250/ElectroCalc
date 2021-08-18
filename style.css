@@ -93,11 +93,9 @@ body {
     font-weight: 700;
  }
 
-h1
+.logo
 {
     font-weight: 500;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
  .gasStuff
@@ -113,10 +111,53 @@ h1
     /* background: url("images/car_pic (2).jpg"); */
     width: 100%;
     border: white thick solid;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 50px;
+    padding-left: 50px;
  }
 
+ .class2 h2
+ {
+   font-size: 60px;
+   font-weight: 300;
+   text-decoration: underline;
+   text-decoration-thickness: 3px;
+ }
 
- .class3
+ .teamDesc
+ {
+   padding-top: 50px;
+   font-size: 40px;
+   
+ }
+.roles
+{
+  
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+.neev
+{
+  justify-content: flex-end;
+  align-items: flex-end;
+  display:flex;
+  padding-right: 50px;
+}
+
+#neevSpace
+{
+  margin-top: 40px;
+}
+#daniel
+{
+  padding-top: 40px;
+}
+
+.class3
  {
     background-attachment: fixed;
     background-size: cover;
@@ -341,6 +382,7 @@ form .submit:hover
   #navbar-logo
   {
     margin-left: 20px;
+    
   }
 
   .nav-menu.active

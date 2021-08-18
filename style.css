@@ -1,0 +1,406 @@
+html
+{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    background: linear-gradient(#2bdb92, #02261c);
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+ .imgBackground
+ {
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+     
+ }
+
+ .title
+ {
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: all 1s ease-in-out;
+
+
+ }
+  
+  .arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+  }
+  
+  .arrows path {
+    stroke: white;
+    fill: transparent;
+    stroke-width: 1px;  
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
+  }
+  
+  @keyframes arrow
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  @-webkit-keyframes arrow /*Safari and Chrome*/
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  .arrows path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a3 { 
+    animation-delay:0s;
+    -webkit-animation-delay:0s; /* Safari 和 Chrome */
+  }
+
+
+ .electroStuff
+ {
+    font-style: italic;
+    font-weight: 700;
+ }
+
+h1
+{
+    font-weight: 500;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+ .gasStuff
+ {
+     font-weight: 100;
+     font-style: normal;
+ }
+
+ .class2
+ {
+    background-attachment: fixed;
+    background-size: cover;
+    /* background: url("images/car_pic (2).jpg"); */
+    width: 100%;
+    border: white thick solid;
+ }
+
+
+ .class3
+ {
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+ }
+
+form
+{
+  /* margin-left: 50px; */  
+  transition: all 1s ease-in-out;
+  font-size: 50px;
+  font-family:'Josefin Sans', sans-serif; 
+  
+}
+
+.form-control
+{
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  justify-content: center;
+  font-size: 30px;
+  font-family:'Josefin Sans', sans-serif;
+  color: white;
+
+}
+select
+{
+  background-color: transparent;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  border: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  align-self: center;
+  margin-left: 116px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+option
+{
+  background-color: teal;
+  color: white; 
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  
+}
+
+
+
+
+
+input [type='text']
+{
+  height: 40px;
+  padding-top: 20px;
+  
+}
+
+input::placeholder
+{
+ color: white;
+}
+
+label
+{
+  padding-top: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  justify-content:  center;
+  width: 300px;
+}
+.inputs
+{
+  display: flex;
+  border-bottom: 2px white solid;
+}
+form .submit
+{
+  
+  background: white;
+  border-color: transparent;
+  color: #2bdb92;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  border-bottom: transparent;
+  
+  
+}
+
+form .submit:hover
+{
+  background-color: #2bdb92;
+  color: white;
+  transition: all 0.3s ease-in-out;
+
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /** NAV BAR STUFF DO NOT TOUCH AT ANY COST **/
+ *
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container
+{
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+.navbar
+{
+  display: grid;
+  grid-template-columns: 0.2fr auto 1fr;
+  align-items: center;
+  height: 60px;
+  width: 90%;
+  max-width: 1720px;
+  margin: 0 auto;
+  /* border: white solid; */
+}
+
+#navbar-logo
+{
+  color: white;
+  justify-self: left;
+  font-size: 40px;
+  font-weight: thin;
+  width: 200px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.nav-menu
+{
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  list-style: none;
+  text-align: center;
+  justify-self: center;
+  font-size: 20px;  
+  padding-top: 10px;
+  width: 800px;
+  margin-left: 50px;
+}
+
+.nav-links
+{
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links:hover
+{
+  font-weight: 900;
+  text-decoration: underline;
+  transition: all 0.5 ease-in-out;
+}
+
+.menu-toggle .bar
+{
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background: white;
+}
+
+@media screen and (max-width: 768px)
+{
+  .nav-container
+  {
+    position: relative;
+
+  }
+
+  .nav-menu
+  {
+    display: grid;
+    grid-template-columns: auto;
+    background: var(--background-color);
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  #navbar-logo
+  {
+    margin-left: 20px;
+  }
+
+  .nav-menu.active
+  { 
+    background: var(--background-color);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links
+  {
+    text-align: center;
+    line-height: 100px;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover
+  {
+    background-color: var(--gold);
+    color: var(--background-color);
+    transition: all 0.4s ease-out;
+  }
+
+  .navbar
+  {
+    width: 100%;
+  }
+  
+  #mobile-menu
+  {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+  .menu-toggle .bar
+  {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle:hover
+  {
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2)
+  {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1)
+  {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3)
+  {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

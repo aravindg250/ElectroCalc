@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroGas</title>
+        
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = 
+    {
+        apiKey: "AIzaSyDCy5vbbTookRrSMcmugZlAw_vS69Nmkuw",
+        authDomain: "electrogas-2845a.firebaseapp.com",
+        projectId: "electrogas-2845a",
+        storageBucket: "electrogas-2845a.appspot.com",
+        messagingSenderId: "667274937435",
+        appId: "1:667274937435:web:974f892e7a771a75b1ab7e",
+        measurementId: "G-0YSLGK2JZG"
+    };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>       
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <div class="nav-container">
+        <nav class="navbar">
+           <h1 id="navbar-logo">smallBytes</h1>
+           <div class="menu-toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+           </div>
+           <ul class="nav-menu">
+              <li><a href="#" class="nav-links">Home</a></li>
+              <li><a href="#abtme" class="nav-links">About Us</a></li>
+              <li><a href="#carSearch" class="nav-links">Search</a></li>
+              <li><a href="#" class="nav-links">Contact Us</a></li>
+              <li><a href="#" class="nav-links">Some BS</a></li>
+
+           </ul>
+        </nav>
+     </div> 
+
+    <div class="title imgBackground">
+        <h1>Welcome To</h1><br>
+        <div><h1 class="electroStuff"> Electro</h1></div>
+        <div><h1 class="gasStuff">Calc</h1></div>
+
+        <a href="#abtme"><svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg></a>
+
+    </div>
+    <div class="class2 imgBackground" id="abtme">
+        <h1>Hello World</h1>
+    </div>
+
+    <div class="class3 imgBackground" id="carSearch">
+        <form id="carSearchForm" action="">
+            <div id="contact-form" class="inputContainer form-control">
+                <div class="inputs">
+                    <label for="name">First Name: </label>
+                    <input name="name" type="text" class="form-control" placeholder="Your First Name" required>
+                </div>
+                <div class="inputs">
+                    <label for="name">Last Name: </label>
+                    <input name="name" type="text" class="form-control" placeholder="Your Last Name" required>
+                </div>
+                <div class="inputs">
+                    <label for="email">Email: </label>
+                    <input name="email" type="email"  class="form-control" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <label for="car">Car: </label>
+                    <select id="teslaPicked" >
+                        <option value="Tesla Model 3">Tesla Model 3</option> 
+                        <option value="Tesla Model Y">Tesla Model Y</option> 
+                        <option value="Tesla Model S">Tesla Model S</option>   
+                        <option value="Tesla Model X">Tesla Model X</option>
+                    </select>
+                </div>
+                <input type="submit" class="form-control submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

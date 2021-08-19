@@ -110,7 +110,6 @@ body {
     background-size: cover;
     /* background: url("images/car_pic (2).jpg"); */
     width: 100%;
-    border: white thick solid;
     display: flex;
     flex-direction: column;
 

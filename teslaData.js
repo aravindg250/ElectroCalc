@@ -4,6 +4,7 @@ var tesla =
     {
         Tesla_Model_3: 
         {
+            carName: "Tesla Model 3",
             features:
             {
                 seats: 5,
@@ -17,19 +18,21 @@ var tesla =
             },
             cost:
             {
-                cash: 39990,
+                cash: 39990 + 1200,
                 loan: 
                 {
-                    perMonth: 549, //per month
+                    monthlyPayments: Math.round(100*(((39990+(39990*0.0249)) - 4500) / 72))/100, //per month
                     downPayment: 4500,
                     months: 72,
                     APR: 2.49,
-                    deliveryCharge: 1200,
-                }
+                },
+                sellingPrice: Math.round(100*(39990+(39990*0.0249)))/100,
+                deliveryCharge: 1200
             }
         },
         Tesla_Model_Y:
         {
+            carName: "Tesla Model Y",
             features:
             {
                 seats: 5,
@@ -38,25 +41,26 @@ var tesla =
                 torque: 389,
                 horsepower: 384,
                 range: 326,
-                batterySize:75,
-                acceleration:4.8,
+                batterySize: 75,
+                acceleration: 4.8,
             },
             cost:
             {
-                cash: 53990,
+                cash: 53990 + 1200,
                 loan: 
                 {
-                    perMonth: 759, //per month
+                    monthlyPayments: Math.round(100*(((53990+(53990*0.0249)) - 4500) / 72))/100, //per month
                     downPayment: 4500,
                     months: 72,
-                    APR: 2.49,
-                    deliveryCharge: 1200,
-                }
-            }
+                    APR: 2.49
+                },
+                sellingPrice: Math.round(100*(53990+(53990*0.0249)))/100,
+                deliveryCharge: 1200
             }
         },
         Tesla_Model_S:
         {
+            carName: "Tesla Model S",
             features:
             {
                 seats: 5,
@@ -70,19 +74,21 @@ var tesla =
             },
             cost:
             {
-                cash: 89990,
+                cash: 89990 + 1200,
                 loan: 
                 {
-                    perMonth: 1253, //per month
+                    monthlyPayments: Math.round(100*(((89990+(89990*0.0249)) - 7500) / 72))/100, //per month
                     downPayment: 7500,
                     months: 72,
                     APR: 2.49,
-                    deliveryCharge: 1200,
-                }
+                },
+                sellingPrice: Math.round(100*(89990+(89990*0.0249)))/100,
+                deliveryCharge: 1200
             }
         },
         Tesla_Model_X:
         {
+            carName: "Tesla Model X",
             features:
             {
                 seats: 7,
@@ -96,15 +102,17 @@ var tesla =
             },
             cost:
             {
-                cash: 99990,
+                cash: 99990 + 1200,
                 loan: 
                 {
-                    perMonth: 1402, //per month
+                    monthlyPayments: Math.round(100*(((99990+(99990*0.0249)) - 7500) / 72))/100, //per month
                     downPayment: 7500,
                     months: 72,
                     APR: 2.49,
-                    deliveryCharge: 1200,
-                }
+                },
+                sellingPrice: Math.round(100*(99990+(99990*0.0249)))/100,
+                deliveryCharge: 1200
             }
         }
+    }
 }

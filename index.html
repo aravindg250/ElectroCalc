@@ -5,33 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ElectroCalc</title>
-        
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-    https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
-
-    <script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = 
-    {
-        apiKey: "AIzaSyDCy5vbbTookRrSMcmugZlAw_vS69Nmkuw",
-        authDomain: "electrogas-2845a.firebaseapp.com",
-        projectId: "electrogas-2845a",
-        storageBucket: "electrogas-2845a.appspot.com",
-        messagingSenderId: "667274937435",
-        appId: "1:667274937435:web:974f892e7a771a75b1ab7e",
-        measurementId: "G-0YSLGK2JZG"
-    };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>       
+              
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,6 +13,7 @@
     
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
+    <script src="teslaData.js" defer></script>
 </head>
 <body>
 
@@ -81,7 +56,7 @@
             <h4 class="neev" id="neevSpace">Neev Vachhani</h4> 
                 <p class="roles neev">Web App Developer & Board of Directors</p>
             <h4 id="daniel">Daniel Burgin</h4>
-               <p class="roles">Vehicle Analyist</p> <!-- Events Advisor and Planner  -->
+               <p class="roles">Vehicle Analyst & Marketing Strategist</p> <!-- Events Advisor and Planner  -->
         </div>
 
     </div>
@@ -90,29 +65,99 @@
         <form id="carSearchForm" action="">
             <div id="contact-form" class="inputContainer form-control">
                 <div class="inputs">
-                    <label for="name">First Name: </label>
-                    <input name="name" type="text" class="form-control" placeholder="Your First Name" required>
+                    <label for="firstName">First Name: </label>
+                    <input name="firstName" type="text" class="form-control" placeholder="Your First Name" required>
                 </div>
                 <div class="inputs">
-                    <label for="name">Last Name: </label>
-                    <input name="name" type="text" class="form-control" placeholder="Your Last Name" required>
+                    <label for="lastName">Last Name: </label>
+                    <input name="lastName" type="text" class="form-control" placeholder="Your Last Name" required>
                 </div>
                 <div class="inputs">
                     <label for="email">Email: </label>
                     <input name="email" type="email"  class="form-control" placeholder="Your Email" required>
                 </div>
-                <div>
-                    <label for="car">Car: </label>
-                    <select id="teslaPicked" >
-                        <option value="Tesla Model 3">Tesla Model 3</option> 
-                        <option value="Tesla Model Y">Tesla Model Y</option> 
-                        <option value="Tesla Model S">Tesla Model S</option>   
-                        <option value="Tesla Model X">Tesla Model X</option>
-                    </select>
-                </div>
+                <div class="inputs">
+                    <label for="budget">Budget: </label>
+                    <input name="budget" type="number"  class="form-control" placeholder="Your Budget" required>
+                </div> 
                 <input type="submit" class="form-control submit" value="Submit">
             </div>
         </form>
+        <table id="dataTable">
+            <tr>
+                <td class="space">User Information</td>
+                <td>Name:</td>
+                <td>Email:</td>
+              </tr>
+              <tr> 
+                <td></td>
+                <td id="name"></td>
+                <td id="email"></td>
+              </tr>
+              <tr class="spacing"></tr>
+              <tr>
+                <td class="cartitle">Name Of Car</td>
+                <td id="nameOfCar"></td>
+              </tr>
+              <tr>
+                <td>Features:</td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td id="seats">Seats: </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td id="doors">Doors: </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="topSpeed">Top Speed: </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="range">Range: </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="batteryCapacity">Battery Capacity: </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="acceleration">0 - 60 Acceleration: </td>
+            </tr>
+            <tr>
+                <td>Finances</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="cash">Cash Price: </td>
+            </tr>
+            <tr>
+                <td>Or</td>
+                <td>Loan Payment: </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="selling">Selling Price: </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="downPayment">Down Payment: </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="monthlyPayments">Monthly Payments: </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="months">Months: </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="APR">APR: </td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>

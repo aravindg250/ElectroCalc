@@ -241,6 +241,7 @@ label
 {
   display: flex;
   border-bottom: 2px white solid;
+  
 }
 form .submit
 {
@@ -266,7 +267,37 @@ form .submit:hover
 }
 
 
+#dataTable
+{
+  /* border: white solid; */
+  font-size: 20px; 
+  display: flex;
+}
 
+/* td
+{
+  border: white solid;
+}
+
+tr
+{
+  border: white solid;
+} */
+
+.space
+{
+  padding-right: 20px;
+}
+
+.spacing
+{
+  height: 20px;
+}
+
+.features
+{
+  padding-top: 50px;
+}
 
 
 

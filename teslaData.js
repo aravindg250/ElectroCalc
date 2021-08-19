@@ -26,7 +26,7 @@ var tesla =
                     months: 72,
                     APR: 2.49,
                 },
-                sellingPrice: Math.round(100*(39990+(39990*0.0249)))/100,
+                sellingPrice: Math.round(100*(39990+1200+(39990*0.0249)))/100,
                 deliveryCharge: 1200
             }
         },
@@ -54,7 +54,7 @@ var tesla =
                     months: 72,
                     APR: 2.49
                 },
-                sellingPrice: Math.round(100*(53990+(53990*0.0249)))/100,
+                sellingPrice: Math.round(100*(53990+1200+(53990*0.0249)))/100,
                 deliveryCharge: 1200
             }
         },
@@ -82,7 +82,7 @@ var tesla =
                     months: 72,
                     APR: 2.49,
                 },
-                sellingPrice: Math.round(100*(89990+(89990*0.0249)))/100,
+                sellingPrice: Math.round(100*(89990+1200+(89990*0.0249)))/100,
                 deliveryCharge: 1200
             }
         },
@@ -110,7 +110,7 @@ var tesla =
                     months: 72,
                     APR: 2.49,
                 },
-                sellingPrice: Math.round(100*(99990+(99990*0.0249)))/100,
+                sellingPrice: Math.round(100*(99990+1200+(99990*0.0249)))/100,
                 deliveryCharge: 1200
             }
         }
